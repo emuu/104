@@ -1,0 +1,13 @@
+#my_canvas { 
+    border: solid 3px;
+    width: 200px;
+    height: 200px;
+}
+#x{						/* Lagt til farge og fet skrift på x og y id'en. */
+	color:blue;
+	font-weight:bold;
+	}
+#y{
+	color:purple;
+	font-weight:bold;
+	}

@@ -1,0 +1,33 @@
+0) Hva er fordelen med et eksisterende JavaScript bibliotek som jQuery i motsetning til å
+skrive en “rå” JavaScript for dynamisk endring av HTML sider?
+
+- Hovedproblemet med å bruke en "rå" JavaScript er at det er forskjeller på hvordan de 
+forskjellige nettlesere implimenterer og leser koden. Fordelen med JQuery er at alle
+nettleserne klarer og lese koden på samme måte.
+
+
+1) Les denne artikkelen
+http://www.ibm.com/developerworks/web/library/wa­htmlmark/index.html og svar på følgende
+spørsmål: Hva er sterke sider til HTML/CSS og hva er sterke sider til Canvas? I hvilke
+situasjoner er det meningsfult å bruke Canvas?
+
+- Sterke sider til html/css: Veldig enkelt å gi stil og farge til tekst, samtidig at man kan definere
+en "class" i css og bruke den flere plasser. Html er hierakisk og det gjør at om siden oppdateres må hele siden
+lastes på nytt. 
+Sterke sider til canvas: Canvas har ikke denne hierakiske modellen, noe som gjør at ting går raskere. Siden 
+må ikke oppdateres etter hver endring, i tillegg fremstilles canvas likt på alle nettlesere og over flere platformer.
+
+
+2) Hvilken grafisk presentasjonsmåte (se Innledning til denne oppgaven) hadde du sagt at
+HTML5 Canvas representerer? Forklar.
+
+- Presentasjonsmåten canvas bruker er ved mus og skjermberøring. I canvasboksen kan man foreta seg endringer ved 
+hjelp av mus, tastatur og lignende.
+
+
+X) Hvis du fikk hjelp til å gjennomføre denne oppgaven av noen, samarbeidet med noen, oppgi
+navn på disse personene. Oppgi også ca. tid det tok deg for å gjennomføre denne oppgaven
+(f. eks. 2t 30m).
+
+- Fikk hjelp av Tor Arne Bang, samarbeidet med han og Julian Fedog.
+Har brukt rundt 5 timer.
