@@ -43,7 +43,7 @@ setter margin og utfylling til 0, siden det er vanlig i nettleser
 /* Egenskapene til hvert listeelement i den uordnede listen*/
 .firstUL li{
 		/*For alle listeelementer settes det et bakgrunnsbilde ved å bruke "css image sprites" */
-        background: transparent url (link_sprite_img.jpg) no-repeat scroll 0 0; /*Bakgrunnsbilde til listeelementene */
+        background: transparent url(link_sprite_img.jpg) no-repeat scroll 0 0; /*Bakgrunnsbilde til listeelementene */
         display: inline;/*Utlistningene vil bli satt på en rad  */
         font-family: 'Arial',Verdana,Tahoma;/* setter fonten til Arial*/
         font-size: 16pt;/*Setter fontstørrelsen til 16punkter */
