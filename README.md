@@ -11,3 +11,17 @@ lab3_v3
 Og 2 .css filer
 lab3 (Blir brukt i lab3_v1)
 lab3_v2 (Blir brukt i lab3_v3 og lab3_v2)
+
+
+===
+Lab oppgave 4
+
+Har lagt til alle filene som var nødvendige i oppgaven
+lab_04.html
+lab4.css
+link_sprite_img.jpg
+og javascript filene.
+
+==
+
+Steffan Larsen
