@@ -1,0 +1,130 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>LAB4 alfabetisk liste</title>
+	<!-- JavaScript biblioteket jQuery gjøres tilgjengelig -->
+	<link href="lab4.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8"></meta>
+	<script src="js/jquery-1.8.1.js"></script>
+	<script src="js/jquery.scrollTo-1.4.7.js"></script>
+	<script>
+	$(function() {
+		
+		//Markere lenken og rulle til det selekterte elementet i DOM
+		$( ".firstUL li" ).each(function() {
+			$( this ).click(function() { //Fange hendelsen når brukeren klikker på en av bokstavene
+				$( ".firstUL li" ).removeClass( "selected" );// I utgangspunktet fjerne klassen som er selektert, hvis den finnes
+				$( this ).addClass( "selected" );//Legger til "selected" klassen til det elementet brukeren har klikket på
+				elementClick =$( this ).attr( "id" );//Får tak i den tilsvarende "ID" foreksempel a b og c.
+			
+				// Rulle til det selekterte DOM elementet , selektert bokstav.
+				$( ".content-container" ).scrollTo($( "#content-for-"+elementClick ), 800);
+			
+				// Endre bakgrunnsfarge
+				$( ".content-container div" ).css( {'background-color' : '#ffffff'} );
+				$( ".content-container #content-for-"+elementClick ).css( {'background-color' : '#d2e2fc'} );
+			});
+		});
+	
+				// Når "tilbake til toppen" knappen blir klikkt på må 'A' markers og innholdet må rulles til toppen
+				$( '.return-to-top' ).click(function() {
+					$( ".firstUL li" ).each(function() {
+						$( ".firstUL li" ).removeClass( "selected" );//remove classname "selected"
+						});
+			
+						// Legg til klassen selected til først bokstav i alfabetet
+						$( "#a" ).addClass( "selected" );
+						//rulle til et element, "A" i dette tilfelle
+						$( ".content-container" ).scrollTo($( "#content-for-a" ), 800);
+						//Setter bakgrunnsfargen til hvit til alle div og ti lyseblått for den selekterte div-en (a i dette tilfelle)
+						$( ".content-container div" ).css( {'background-color' : '#ffffff'} );
+						$( ".content-container #content-for-a" ).css( {'background-color' : '#d2e2fc'} ); 
+			});
+		
+		});
+	</script>
+</head>
+<body>
+
+<div id="body-container">
+
+	<div class="glossary-container">
+		<ul class="firstUL">
+			<li id="a" class="selected">A</li>
+			<li id="b">B</li>
+			<li id="c">C</li>
+			<li id="d">D</li>
+			<!-- Flere bokstaver legges til her -->
+		</ul>
+	</div> <!-- Lukker alfabetholderen -->
+	<div class="content-container">
+		<!-- A -->
+		<div id="content-for-a" style="background-color:#d2e2fc">
+		<!-- Innhold for A -->
+			<dl>
+				<dt>ActionScript</dt>
+					<dd>ActionScript er et programmeringsspråk basert på ECMAScript som blir brukt primært til utvikling av nettsider og 
+					programvare for Adobe Flash Player-plattformen, men også i noen databaseapplikasjoner og grunnleggende robotikk.
+				
+				<dt>AppleScript</dt>
+					<dd>AppleScript er et skriptspråk laget av Apple Inc. og bygget inn Macintosh-operativsystemer siden System 7.
+					</dd>
+			</dl>
+		<p class="return-to-top">Tilbake til toppen</p>
+		</div>
+		
+				<!-- B -->
+		<div id="content-for-b" style="background-color:#d2e2fc">
+		<!-- Innhold for B -->
+			<dl>
+				<dt>B</dt>
+					<dd>B var en forenklet versjon av programmeringsspråket BCPL. B ble erstattet av programmeringsspråket C i 1973, og er idag nesten ikke lenger i bruk.
+					
+				<dt>BASIC</dt>
+					<dd>BASIC  er et programmeringsspråk som ble utviklet i USA i 1963,
+					av John George Kemeny og Thomas Eugene Kurtz på Dartmouth College, med det mål for øye å gjøre programmering enklere.
+					</dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+		</div>
+		
+				<!-- C -->
+		<div id="content-for-c" style="background-color:#d2e2fc">
+		<!-- Innhold for C -->
+			<dl>
+				<dt>C</dt>
+					<dd>C er et høynivå programmeringsspråk. Med dette språket er det mulig å uttrykke seg svært maskinnært til høynivåspråk å være.
+					Til forskjell fra lavnivåspråkene kan C-kode kompileres for de fleste maskiner.
+				
+				<dt>C++</dt>
+					<dd>C++ er et populært høynivå programmeringsspråk som er en utvidelse av språket C. C++ er et multiparadigmespråk, 
+					med støtte for funksjonell programmering, objektorientert programmering (OOP), dataabstraksjon og generisk programmering.
+					Populariteten skyldes både at det bygger på C og at det er implementert for de fleste operativsystem.
+					</dd>
+		</dl>
+		<p class="return-to-top">Tilbake til toppen</p>
+		</div>
+		
+				<!-- D -->
+		<div id="content-for-d" style="background-color:#d2e2fc">
+		<!-- Innhold for D -->
+		<dl>
+			<dt>D</dt>
+				<dd>D er et programmeringsspråk utviklet av Walter Bright. Det tar mål av seg til å kombinere ytelse og fleksibillitet fra språk som C og C++,
+				med høynivåfunksjonalitet og programmerervennlighet fra språk som Ruby og Python.
+				
+			<dt>Delphi</dt>
+				<dd>Delphi er et programvareutviklingsmiljø (Integrated Development Environment (IDE)) basert på programmeringsspråket Pascal.
+				</dd>
+		</dl>
+		<p class="return-to-top">Tilbake til toppen</p>
+		</div>
+		
+	</div> <!-- Lukker innholdsbeholderen -->
+</div> <!-- Lukker av body-container -->
+
+<!-- Signatur og dato -->
+<center><address>Laget 21 Oktober 2013<br>
+av Steffan Larsen.</address></center>
+
+</body>
+</html>
